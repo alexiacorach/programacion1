@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1rem;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.encabezado{
+    background-color: cornsilk;
+    grid-area: encabezado;
+    background-image: url(./imagenes/Razas/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+.menuSuperior{
+    list-style: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+    padding: 2rem;
+}
+.menuSuperior a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+.irapie a {
+    color: black;
+    float: right;
+}
+.footer{
+    background-color: gainsboro;
+    grid-area: footer;
+   
+}
+.vida{
+    background-color: rgba(240, 219, 232, 0.932);
+    grid-area: vida;
+}
+.boxmodel{
+    background-color: rgba(240, 219, 232, 0.932);
+    grid-area: boxmodel;
+    display: inline-block;
+}
+.boxmodel1,
+.boxmodel2 {
+    float: left;
+    background-color: rgb(240, 195, 223);
+    width: 400px;
+    height: 220px;
+    padding: 10px 20px;
+    margin: 40px;
+    overflow: auto;
+    border: solid 2px black;
+}
+
+.sugerencias{
+    background-color: rgb(240, 195, 223);
+    grid-area: sugerencias;
+    padding: 2rem;
+    line-height: 2rem;
+    
+}
+.bodyhome{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "vida vida vida sugerencias"
+    "boxmodel boxmodel boxmodel sugerencias"
+    "footer footer footer footer";
+    grid-template-columns: 2fr 2fr 2fr 1.5fr;
+    grid-template-rows: 2fr 2fr 3fr 0.5fr;
+    height: 100vh;
+    column-gap: 5px;
+    row-gap: 10px;
+    
+}
+
+/* contenido razas*/
+.bodyhome2{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "imgA imgA imgA"
+    "imgB imgB imgB"
+    "imgC imgC imgC"
+    "imgD imgD imgD"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+    height: 100vh;
+    column-gap: 5px;
+    row-gap: 10px;
+
+}
+.imgA{
+    grid-area: imgA;
+    background-color: rgb(240, 195, 223);
+}
+.imgB{
+    grid-area: imgB;
+    background-color: rgb(240, 195, 223);
+}
+.imgC{
+    grid-area: imgC;
+    background-color: rgb(240, 195, 223);
+}
+.imgD{
+    grid-area: imgD;
+    background-color: rgb(240, 195, 223);
+}
+.imgRazas {
+    padding: 2rem;
+    width: 40%;
+}
+
+.imgRazas img {
+    width: 100%;
+    border-radius: 3px;
+}
